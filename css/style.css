@@ -12,7 +12,7 @@ html {
     
 .pagetop-container {
     display: block;
-    background: url("images/bwsbp3wclapboard2.jpg") center center no-repeat;
+    background: url("../images/bwsbp3wclapboard2.jpg") center center no-repeat;
     background-size: cover;
     height: 80vh;
     padding: 0;
@@ -239,7 +239,7 @@ section p {
 
 /* Lists and Navigation
 ========================================================================== */
-ul {
+.navigation {
     width: 100%;
     max-width: 1000px;
     padding: 15px;
