@@ -51,6 +51,7 @@
         <p>Our team is here to assist you with the process of taking a concept and turning it into a marketable film.</p><br />
         <br />
         <p>Founders, Corey Roederor and Matt White</p>
+        <img src="images/foundersphoto.jpg" class="medium-l" alt="two men with yellow background"/>
         <p><a href="#top">Return to top</a></p>
     </div>
   </section>
@@ -59,12 +60,31 @@
     <div class="projects-content">
       <h1 id="projects">Projects</h1>
         <h2>Coming Soon</h2><br />
+        <img src="images/mallwalkers.jpg" class="medium-p" alt="three girls in mall lobby"/>
           <p><b>Mall Walkers</b><br />
-          Estimated Release Fall 2024</p>
+          <p>
+            Autumn, Crystal and Queenie, three Louisville women in their mid 20s and fresh out of prison, find themselves immersed in the lives of a group of mallwalking, pickleballing senior citizens as they navigate whether to walk the straight and narrow or fall back into their old criminal ways.<br />
+            <br/>
+            Written, produced and directed by Highlands’ natives, this independently funded, hilarious and heartfelt comedy centered around the Mid-City Mall shows the true grit and beauty of life in Louisville. This project will not only help the budding Kentucky film industry, but it will also employ dozens of Kentuckians through production and will bring much needed attention to local businesses.<br />
+          </p>  
+          Release Date: October, 25, 2024</p>
+          <add-to-calendar-button 
+  name="Mall Walkers "
+  description="Release Date"
+  startDate="2024-10-25"
+  startTime="09:00"
+  endDate="2024-10-25"
+  endTime="21:00"
+  timeZone="America/New_York"
+  location="shotinthebluegrass.com"
+  availability="busy"
+  iCalFileName="Mall Walkers Release Date"
+  options="'Apple','Google','iCal','Outlook.com','Yahoo'"
+></add-to-calendar-button>
           <form action="http://www.example.org/subscribe.php">
           <p>Subscribe to our upcoming projects email list:</p>
-          <input type="text" name="email" />
-          <input type="image" src="images/subscribe.jpg" width="100" height="20" />
+          <input type="email" name="email" />
+          <input type="submit" name="subscribe" value="Subscribe" />
           </form>
           <p><a href="#top">Return to top</a></p>
     </div>
@@ -103,7 +123,9 @@
             <tr>  
             <td><img src="images/city view1.jpg" class="small" alt="aerial waterfront view of Louisville with bridge, high rise buildings and colorful sunset sky"/></td> 
             <td class="description">City of Louisville</td>
-            <td class="weather">Current Weather Conditions</td> 
+            <td class="weather"><p>Current Weather</p>
+              <div id="weatherData"></div>
+            </td> 
           </tr>
         </table>
         <br />
@@ -119,15 +141,14 @@
         <p>502-000-0000</p><br />
         <div class="map">
             <iframe src="https://storage.googleapis.com/maps-solutions-4fwv6e5z9f/commutes/b80e/commutes.html"
-                          width="150%" height="150%"
+                          width="100%" height="100%"
                           style="border:0;"
                           loading="lazy">
             </iframe> 
-        <address>
-          <p>
-          <a href=mailto:contact@shotinthebluegrass.com>contact@shotinthebluegrass.com</a>
-          </p>
-          </address>
+            <address>
+              <p><a href=mailto:contact@shotinthebluegrass.com>contact@shotinthebluegrass.com</a>
+              </p>
+            </address> 
         <p><a href="#top">Return to top</a></p>
     </div>
   </section>
@@ -159,8 +180,9 @@
                       <label><input type="radio" name="rating" value="no" /> No</label>
                     </p>
                     <p>
-                      <label for="comments">Please share your initial thoughts regarding anticipated level of interest:</label><br />
-                      <textarea rows="4" cols="40" id="comments"></textarea>
+                      <label for="comments">Please share your initial thoughts regarding anticipated level of interest (up to 140 characters):</label><br />
+                      <textarea name="comments" id="comments" rows="5" cols="40"></textarea>
+                      <span id="comments-count" class="hide"></span>
                     </p>
                     <label><input type="checkbox" name="subscribe" checked="checked" /> Sign me up for email updates</label><br />
                     <input type="submit" value="Submit review" /> <br />
@@ -173,11 +195,14 @@
 
   <section class="footer-container">
     <footer class="footer-content">
-      <p>&copy; 2023 Small Batch Productions. This website maintained by: Christian White</p> 
+      <div id='footer'><p>Copyright &copy</p> Small Batch Productions. This website maintained by: Christian White</div> 
     </footer>
   </section>
 
   <script src="js/app.js"></script>
+  <script src="js/textarea-counter.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
+
 
 </body>
 

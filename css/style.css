@@ -6,6 +6,10 @@ html {
     font-size: 16px;
 }
 
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../montserrat/Montserrat-Regular.otf');
+}
 
 /* Layout
 ========================================================================== */
@@ -175,10 +179,11 @@ a:hover, a.on {
     line-height: 1;
     margin: 0 0 24px 0;
     text-transform: uppercase;
+    text-shadow: 3px 3px 8px #304463;
 }
 
 .aboutus-content p {
-    font-family: "Josefin Sans",sans-serif;
+    font-family: "Montserrat",sans-serif;
     font-size: 18px;
     color: #F1F1F1;
     line-height: 1.5;
@@ -191,10 +196,29 @@ a:hover, a.on {
     line-height: 1;
     margin: 0 0 24px 0;
     text-transform: uppercase;
+    text-shadow: 3px 3px 8px #212428
 }
-    
+.projects-content h2 {
+    font-family: "Montserrat",sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #F1F1F1;
+    text-shadow: 3px 3px 8px #000;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+.projects-content h3 {
+    font-family: "Montserrat",sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #F1F1F1;
+    text-shadow: 3px 3px 8px #000;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
 .projects-content p {
-    font-family: "Josefin Sans",sans-serif;
+    font-family: "Montserrat",sans-serif;
     font-size: 18px;
     color: #F1F1F1;
     line-height: 1.5;
@@ -207,10 +231,11 @@ a:hover, a.on {
     line-height: 1;
     margin: 0 0 24px 0;
     text-transform: uppercase;
+    text-shadow: 3px 3px 8px #304463
 }
 
 .whyky-content p {
-    font-family: "Josefin Sans",sans-serif;
+    font-family: "Montserrat",sans-serif;
     font-size: 18px;
     color: #F1F1F1;
     line-height: 1.5;
@@ -223,10 +248,11 @@ a:hover, a.on {
     line-height: 1;
     margin: 0 0 24px 0;
     text-transform: uppercase;
+    text-shadow: 3px 3px 8px #212428
 }
 
 .contact-content p {
-    font-family: "Josefin Sans",sans-serif;
+    font-family: "Montserrat",sans-serif;
     font-size: 18px;
     color: #F1F1F1;
     line-height: 1.5;
@@ -238,18 +264,19 @@ a:hover, a.on {
     line-height: 1;
     margin: 0 0 24px 0;
     text-transform: uppercase;
+    text-shadow: 3px 3px 8px #304463
     
 }
 
 .investor-content p {
-    font-family: "Josefin Sans",sans-serif;
+    font-family: "Montserrat",sans-serif;
     font-size: 18px;
     color: #F1F1F1;
     line-height: 1.5;
 }
 
 section p {
-    font-family: "Josefin Sans",sans-serif;
+    font-family: "Montserrat",sans-serif;
     line-height: 1.5;
 }
 
@@ -263,7 +290,9 @@ section p {
     border-top: 2px solid #000;
     border-bottom: 2px solid #000;
     text-align: center;
-    font-family: "Courier New", Courier, monospace;
+    vertical-align: middle;
+    font-family: "Montserrat",sans-serif;
+    text-shadow: 2px 2px 7px #304463
 }
 
 .navigation a {
@@ -273,7 +302,7 @@ section p {
 }
 
 ul.services {
-    font-family: "Josefin Sans",sans-serif;
+    font-family: "Montserrat",sans-serif;
     font-size: 18px;
     color: #F1F1F1;
     line-height: 1.5;
@@ -297,11 +326,12 @@ a {
     text-transform: uppercase;
     text-decoration: none;
     padding: 6px 18px 5px 18px;
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Montserrat",sans-serif;
 }
 
 footer {
     text-align: center;
+    font-family: "Montserrat",sans-serif;
 }
 
 legend {
@@ -312,7 +342,7 @@ legend {
 }
 
 label {
-    font-family: "Josefin Sans",sans-serif;
+    font-family: "Montserrat",sans-serif;
     color: #F1F1F1;
     font-size: 18px;
 }
@@ -330,15 +360,15 @@ img.small {
     border-width: thick;
 }
 
-img.medium land{
-    width: 205px;
+img.medium-l {
+    width: 250px;
     height: 200px;
     border-style: ridge;
     border-width: thick;
 }
-img.medium port{
+img.medium-p {
     width: 200px;
-    height: 205px;
+    height: 275px;
     border-style: ridge;
     border-width: thick;
 }
@@ -357,7 +387,7 @@ td.description {
     margin: 0px;
     border-style: ridge;
     border-width: thick;
-    font-family: "Josefin Sans",sans-serif;
+    font-family: "Montserrat",sans-serif;
     font-size: 18px;
     color: #F1F1F1;
     line-height: 1.5;
@@ -370,7 +400,7 @@ td.weather {
     margin: 0px;
     border-style: ridge;
     border-width: thick;
-    font-family: "Josefin Sans",sans-serif;
+    font-family: "Montserrat",sans-serif;
     font-size: 18px;
     color: #F1F1F1;
     line-height: 1.5;
