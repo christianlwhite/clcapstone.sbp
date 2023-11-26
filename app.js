@@ -1,28 +1,97 @@
-////function init() {
-///    var mapOptions = {
-      ///  center: new google.maps.LatLng(38.27283778412796, -85.70843950344207), mapTypeId: google.maps.MapTypeId.ROADMAP, zoom: 13
-    ///};
-    ///var venueMap;
-    ///venueMap = new google.maps.Map(document.getElementById('map'), mapOptions);
-///}
+// COPYRIGHT 
+let today = new Date();
+let year = today.getFullYear();
 
-///function loadScript() {
-    ///var script = document.createElement('script');
-    ///script.src = 'http://maps.googleleapis.com/maps/api/js?
-                        ///sensor=false&callback=init';
-    ///document.body.appendChild(script);
-///}
+let el = document.getElementById('footer');
+///el.innerHTML = '<p>Copyright &copy;' + year + '</p>';
 
-///window.onload = loadScript;
 
+//GOOGLE MAP API
 document.getElementById("https://storage.googleapis.com/maps-solutions-4fwv6e5z9f/commutes/b80e/commutes.html").style.textAlign = "center";
 
-////black mountain api////https://api.open-meteo.com/v1/forecast?latitude=36.91&longitude=-82.89&hourly=temperature_2m&temperature_unit=fahrenheit&timezone=America%2FNew_York&forecast_days=1
+//API KEY
+const key = "9a6023f646a9435a07796af7375c6296";
 
-////woodford county (bluegrass)////https://api.open-meteo.com/v1/forecast?latitude=38.11&longitude=-84.69&hourly=temperature_2m&temperature_unit=fahrenheit&timezone=America%2FNew_York&forecast_days=1
+function getWeather(latitude, longitude){
+  let api = "https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}";
 
-////farmland western ky////https://api.open-meteo.com/v1/forecast?latitude=36.88&longitude=-86.29&hourly=temperature_2m&temperature_unit=fahrenheit&timezone=America%2FNew_York&forecast_days=1
+  fetch(api) .then( function(response){
+                      let data = response.json();
+                      return data;
+                        .then ( function(data){
+                          weather.temperature.value = data.main.temp;
+                          weather.description = data.weather[0].icon;
+              
+              .then( function(){
 
-////cumberland falls ky/////https://api.open-meteo.com/v1/forecast?latitude=36.84&longitude=-84.34&hourly=temperature_2m&temperature_unit=fahrenheit&timezone=America%2FNew_York&forecast_days=1
+                displayWeather();
 
-////louisville////https://api.open-meteo.com/v1/forecast?latitude=38.25&longitude=-85.75&hourly=temperature_2m&forecast_days=1
+              })            
+
+                        })
+
+  })
+}
+// SELECT ELEMENTS
+const iconElement = document.querySelector(".weather-icon");
+const tempElement = document.querySelector(".temperature-value p");
+const descElement = document.querySelector(".temperature-description p");
+const notificationElement = document.querySelector(".notification");
+
+//Data
+const weather = {};
+
+weather.temperature = {
+  unit : "farenheight"
+}
+
+//CHECK IF BROWSER SUPPORTS GEOLOCATION
+if("geolocation" in navigator){
+  navigator.geolocation.getCurrentPosition(setPosition, showError);
+else{
+  notificationElement.style.display = "block";
+  notificationElement.innerHTML = "<p>Browser doesn't support geolocation</p>";
+}
+
+// SET USER LOCATION
+function setPosition(position){
+  let latitude = position.coords.latitude;
+  let longitude = position.coords.longitude;
+
+  getWeather(latitude, longitude);
+}
+
+// SHOW ERROR WHEN THERE IS AN ISSUE WITH GEOLOCATION SERVICE
+function showError(error){
+  notificationElement.style.display = "block";
+  notificationElement.innerHTML = "<p> ${error.message} </p>";
+}
+
+
+// GET WEATHER FROM API PROVIDER
+function getWeather(latitude, longitude){
+  let api = "https://api.openweathermap.org/data/2.5/weather?lat=38.25&lon=-85.76&appid=9a6023f646a9435a07796af7375c6296&units=imperial";
+
+  fetch(api);
+    .then(function(response){
+      let data = response.json();
+      return data;
+    })
+    .then(function(data){
+      weather.temperature.value = (data.main.temp);
+      weather.description = dataWeather[0].description;
+      weather.iconId - data.weather[0].icon;
+    })
+    .then(function(){
+      displayWeather();
+    });
+  }
+
+  // DISPLAY WEATHER TO UI
+  function displayWeather(){
+    iconElement.innerHTML = '<img src="icons/${weather.iconId}.png"/>';
+    tempElement.innerHTML = '${weather.temperature.value}°<span>F</span>';
+    descElement.innerHTML = weather.description;
+  }
+
+

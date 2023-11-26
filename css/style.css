@@ -98,6 +98,7 @@ html {
     color: #F1F1F1;
     width: 100%;
     max-width: 1000px;
+    height: 640px;
     border: 1 px solid #232443;
     border-radius: 12px;
     display: flex;
@@ -142,6 +143,16 @@ html {
     text-align: center;
 }
 
+.map-container {
+    background: #737373;
+    display: block;
+    height: 150%;
+    width: 150%;
+    align-items: center;
+    padding: 48px 0;
+}
+
+
 /* Links and Link Buttons
 ========================================================================== */
 a:hover, a.on {
@@ -149,6 +160,10 @@ a:hover, a.on {
     background-color: #ffffff;
 }
 
+.navigation a:hover, a.on {
+    color: #094dba;
+    background-color: #ffffff;
+}
 
 /* Typography
 ========================================================================== */
@@ -223,6 +238,7 @@ a:hover, a.on {
     line-height: 1;
     margin: 0 0 24px 0;
     text-transform: uppercase;
+    
 }
 
 .investor-content p {
@@ -247,6 +263,20 @@ section p {
     border-top: 2px solid #000;
     border-bottom: 2px solid #000;
     text-align: center;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.navigation a {
+  color: #000;
+  font-size: 26px;
+  font-weight: bold
+}
+
+ul.services {
+    font-family: "Josefin Sans",sans-serif;
+    font-size: 18px;
+    color: #F1F1F1;
+    line-height: 1.5;
 }
 
 li {
@@ -263,19 +293,55 @@ p {
 }
 
 a {
-    color: #000000;
+    color: #F1F1F1;
     text-transform: uppercase;
     text-decoration: none;
     padding: 6px 18px 5px 18px;
+    font-family: "Courier New", Courier, monospace;
 }
 
 footer {
     text-align: center;
 }
 
+legend {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    font-size: 22px;
+    color: #F1F1F1;
+}
+
+label {
+    font-family: "Josefin Sans",sans-serif;
+    color: #F1F1F1;
+    font-size: 18px;
+}
+
+
+
+
+
 /* Images and Videos
 ========================================================================== */
+img.small {
+    width: 100px;
+    height: 100px;
+    border-style: ridge;
+    border-width: thick;
+}
 
+img.medium land{
+    width: 205px;
+    height: 200px;
+    border-style: ridge;
+    border-width: thick;
+}
+img.medium port{
+    width: 200px;
+    height: 205px;
+    border-style: ridge;
+    border-width: thick;
+}
 
 /* Forms
 ========================================================================== */
@@ -284,19 +350,47 @@ footer {
 /* Tables
 ========================================================================== */
 td.description {
-    min-width: 450px;
-    max-width: 650px;
+    width: 100%;
+    max-width: 1000px;
     text-align: center;
     padding: 5px;
     margin: 0px;
+    border-style: ridge;
+    border-width: thick;
+    font-family: "Josefin Sans",sans-serif;
+    font-size: 18px;
+    color: #F1F1F1;
+    line-height: 1.5;
 }
-
+td.weather {
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    padding: 5px;
+    margin: 0px;
+    border-style: ridge;
+    border-width: thick;
+    font-family: "Josefin Sans",sans-serif;
+    font-size: 18px;
+    color: #F1F1F1;
+    line-height: 1.5;
+}
 /* 	
 =============================================================================
  MEDIA QUERIES
 =============================================================================
 */
-
+gmp-map {
+    height: 100%;
+  }
+  
+  /* Optional: Makes the sample page fill the window. */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
 /* 	
 =============================================================================
  PRINT STYLES
