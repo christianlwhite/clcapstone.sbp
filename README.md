@@ -8,28 +8,25 @@ In order to run correctly, please install the following:
 
 Express.js
 Nodemon
+
 After these packages are installed, you must run "npm start" in the code terminal and the project will display in your browser at "localhost:3000".
 
-Please Note
-
+Please Note:
 I am aware that the API key is visible in the code and that this is not best practice. I was unable to address this in the time we had to complete the project but will research this further before running the website live.  
 
-About the Project
+About the Project:
+Small Batch Productions is an emerging small film production company located in Louisville, KY.  The company goal with the website is to promote their upcoming film projects and raise awareness of the Kentucky film industry as a whole.  The compmany also wanted to make sure anyone interested in future projects could contact them easily.
 
-Small Batch Productions is an emerging small film production company located in Louisville, KY.  Given the recent writer's strike and actor's guild strikes, the company is just beginning to start working on producing projects, but is being launched to take advantage of the new tax incentives being offered in Kentucky and to help boost the local economy of the city the founders grew up in and have loved being part of.  The website is being developed to help promote these causes and to ensure contacting and following the company projects is an extremely easy task.   
+The website layout is limited to one page with links to the main headings to keep the page functionality as quick as possible and to provide a nice user experience.  There are 6 main headings that connect to sections within the page, HOME, ABOUT US, PROJECTS, WHY KENTUCKY, CONTACT US and PROJECT AND INVESTOR RELATIONS.  Each section provides important information regarding the company's previously stated goals with the website development.
 
-The website layout is limited to one page with links to the main headings to keep the page functionality as quick as possible and to provide a nice user experience.  There are 6 main headings that connect to sections within the page, HOME, ABOUT US, PROJECTS, WHY KENTUCKY, CONTACT US and PROJECT AND INVESTOR RELATIONS.  Each section provides important information concerning the company, the services offered by the company, following the company projects or contacting the company for any reason.
-
-
-Project Features
-
+Project Features:
 For this project, I have included the following features from the Web Development Capstone Project Guidelines requirement list:
 
 Overall expectations concerning visual appeal were addressed through color and font choices.  Responsive Design was addressed through use of CSS, Flexboxes, Javascript functions and screen adaptability.
 
 From the Features list section 1 (asked to choose at least two):
 
-1.  Use arrays, objects, sets or maps to store and retrieve information that is deplayed in your app.  A copyright and date object were used in the footer to protect the site and to show that it is currently maintained.
+1.  Use arrays, objects, sets or maps to store and retrieve information that is displayed in your app.  A copyright and date object were used in the footer to protect the site and to show that it is currently maintained.
 
 2.  Use a regular expression to validate user input and either prevent the invalid input or inform the user about it (in all cases prevent invalid input from being stored or saved).  In the PROJECTS section an email submission was set up to be required for the input field and subscribe function.
 
