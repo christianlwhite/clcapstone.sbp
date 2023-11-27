@@ -85,7 +85,7 @@ html {
     max-width: 1000px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 12px;
 }
@@ -155,6 +155,17 @@ html {
     align-items: center;
     padding: 48px 0;
 }
+
+.comments-count {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
+
 
 
 /* Links and Link Buttons
@@ -375,6 +386,15 @@ img.medium-p {
 
 /* Forms
 ========================================================================== */
+textarea {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+#counter {
+    font-weight: bold;
+}
 
 
 /* Tables
