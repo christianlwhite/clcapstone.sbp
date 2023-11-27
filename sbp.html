@@ -50,7 +50,7 @@
         <br />
         <p>Our team is here to assist you with the process of taking a concept and turning it into a marketable film.</p><br />
         <br />
-        <p>Founders, Corey Roederor and Matt White</p>
+        <p>Founders, Matt White and Corey Roederor</p>
         <img src="images/foundersphoto.jpg" class="medium-l" alt="two men with yellow background"/>
         <p><a href="#top">Return to top</a></p>
     </div>
@@ -61,13 +61,13 @@
       <h1 id="projects">Projects</h1>
         <h2>Coming Soon</h2><br />
         <img src="images/mallwalkers.jpg" class="medium-p" alt="three girls in mall lobby"/>
-          <p><b>Mall Walkers</b><br />
+          <h3><b>Mall Walkers</b></h3><br />
           <p>
             Autumn, Crystal and Queenie, three Louisville women in their mid 20s and fresh out of prison, find themselves immersed in the lives of a group of mallwalking, pickleballing senior citizens as they navigate whether to walk the straight and narrow or fall back into their old criminal ways.<br />
             <br/>
-            Written, produced and directed by Highlands’ natives, this independently funded, hilarious and heartfelt comedy centered around the Mid-City Mall shows the true grit and beauty of life in Louisville. This project will not only help the budding Kentucky film industry, but it will also employ dozens of Kentuckians through production and will bring much needed attention to local businesses.<br />
+            Written, produced and directed by Highlands natives, this independently funded, hilarious and heartfelt comedy centered around the Mid-City Mall shows the true grit and beauty of life in Louisville. This project will not only help the budding Kentucky film industry, but it will also employ dozens of Kentuckians through production and will bring much needed attention to local businesses.<br />
           </p>  
-          Release Date: October, 25, 2024</p>
+          <p>Release Date: October 25, 2024</p>
           <add-to-calendar-button 
   name="Mall Walkers "
   description="Release Date"
@@ -80,7 +80,7 @@
   availability="busy"
   iCalFileName="Mall Walkers Release Date"
   options="'Apple','Google','iCal','Outlook.com','Yahoo'"
-></add-to-calendar-button>
+></add-to-calendar-button><br />
           <form action="http://www.example.org/subscribe.php">
           <p>Subscribe to our upcoming projects email list:</p>
           <input type="email" name="email" />
@@ -181,12 +181,13 @@
                     </p>
                     <p>
                       <label for="comments">Please share your initial thoughts regarding anticipated level of interest (up to 140 characters):</label><br />
-                      <textarea name="comments" id="comments" rows="5" cols="40"></textarea>
-                      <span id="comments-count" class="hide"></span>
+                      <textarea id="comments" oninput="updateCounter()" rows="5" cols="40"></textarea><br />
+                      <span id="counter">0</span> characters
                     </p>
                     <label><input type="checkbox" name="subscribe" checked="checked" /> Sign me up for email updates</label><br />
                     <input type="submit" value="Submit review" /> <br />
                 </fieldset>
+              </div>
             </form>
       </article>
       <p><a href="#top">Return to top</a></p>
@@ -195,15 +196,12 @@
 
   <section class="footer-container">
     <footer class="footer-content">
-      <div id='footer'><p>Copyright &copy</p> Small Batch Productions. This website maintained by: Christian White</div> 
-    </footer>
+      <footer id="footer"></footer>
   </section>
 
   <script src="js/app.js"></script>
-  <script src="js/textarea-counter.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
-
-
+  <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script> 
+  
 </body>
 
 </html>
