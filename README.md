@@ -3,14 +3,15 @@ SUBMITTED BY: CHRISTIAN WHITE
 PROJECT NAME: clcapstone.sbp
 
 To view this on your computer:
-Please clone the following repository from github to your machine:  https://github.com/christianlwhite/clcapstone.sbp
+
+Please clone the following repository from github to your machine:  https://github.com/christianlwhite/clcapstone.sbp.git
 
  To do this, please follow these steps:
    - Install Git: If Git is not already installed on your machine, you will need to download and install it from the official Git website (https://git-scm.com/downloads).
    - Open the command line interface on your machine (Terminal (Mac/Linux) or Git Bash (Windows)).
    - Using the `cd` command, navigate to the directory where you want to clone the repository.
    - In the command line, run the following command:
-     git clone https://github.com/christianlwhite/clcapstone.sbp
+     git clone https://github.com/christianlwhite/clcapstone.sbp.git
    - Press Enter: This will clone the repository to your local machine.
    - Once the repository is cloned, navigate to the cloned directory using the command line and open the HTML file in your preferred web browser. You can do this by double-clicking the HTML file or using a command like `open index.html` (on Mac) or `start index.html` (on Windows) in the command line.
 
