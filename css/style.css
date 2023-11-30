@@ -21,6 +21,10 @@ html {
     align-items: center; /* Centers items vertically in the grid */
     gap: 10px; /* Adds some space between the grid items */
 }
+.grid-item add-to-calendar-button {
+    display: flex;
+    justify-content: center;
+}
   
 .grid-item {
     padding: 10px; /* Adds some padding inside each grid item */
@@ -49,7 +53,19 @@ html {
     text-align: center; /* Centers the text within the heading */
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+  }
   
+form {
+    text-align: center;
+}
 
 .pagetop-container {
     display: block;
@@ -473,20 +489,20 @@ img {
     height: auto;
   }
 
-/* Styles for desktop computers and laptops */
-@media only screen and (min-width: 1024px) {
-    /* Add your desktop/laptop styles here */
-  }
+/* For cell phones */
+@media only screen and (max-width: 600px) {
+    /* CSS rules for cell phones */
+}
   
-  /* Styles for tablets and smaller laptops */
-  @media only screen and (max-width: 1023px) {
-    /* Add your tablet styles here */
-  }
+/* For tablets */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* CSS rules for tablets */
+}
   
-  /* Styles for mobile devices */
-  @media only screen and (max-width: 767px) {
-    /* Add your mobile styles here */
-  }
+/* For personal computers */
+  @media only screen and (min-width: 1025px) {
+    /* CSS rules for personal computers */
+}
 
 gmp-map {
     height: 100%;

@@ -1,17 +1,13 @@
 // COPYRIGHT
 // Get the current year
-const currentYear = new Date().getFullYear();
+document.addEventListener('DOMContentLoaded', function () {
+  // Get the current year
+  const currentYear = new Date().getFullYear();
 
-// Get the footer element
-const footer = document.getElementById('footer');
-
-// Update the footer with the copyright notice and current year
-footer.textContent = `© ${currentYear} Small Batch Productions. All rights reserved.`;
-//let today = new Date();
-//let year = today.getFullYear();
-
-let el = document.getElementById('footer');
-el.innerHTML = '<p>Copyright &copy;' + year + '</p>';
+  // Display the current year in the footer
+  const currentYearElement = document.getElementById('currentYear');
+  currentYearElement.textContent = currentYear;
+});
 
 //TEXT AREA COUNTER
 function updateCounter() {
@@ -33,4 +29,4 @@ function updateCounter() {
 }
 
 //GOOGLE MAP API
-document.getElementById("https://storage.googleapis.com/maps-solutions-4fwv6e5z9f/commutes/b80e/commutes.html").style.textAlign = "center";
+//document.getElementById("https://storage.googleapis.com/maps-solutions-4fwv6e5z9f/commutes/b80e/commutes.html").style.textAlign = "center";
