@@ -13,7 +13,44 @@ html {
 
 /* Layout
 ========================================================================== */
-    
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto; /* Creates two columns of equal width */
+    justify-items: center; /* Centers items horizontally in the grid */
+    align-items: center; /* Centers items vertically in the grid */
+    gap: 10px; /* Adds some space between the grid items */
+}
+  
+.grid-item {
+    padding: 10px; /* Adds some padding inside each grid item */
+    justify-items: center; /* Centers items horizontally in the grid */
+    align-items: center; /* Centers items vertically in the grid */
+}
+  
+.grid-item img {
+    width: 100%; /* Makes the image take up the full width of its container */
+    height: auto; /* Keeps the image's original aspect ratio */
+    justify-items: center; /* Centers items horizontally in the grid */
+    align-items: center; /* Centers items vertically in the grid */
+}
+
+.grid-item ul {
+    list-style-type: none; /* Removes the default list item bullets */
+    padding: 0; /* Removes the default padding */
+    text-align: center; /* Centers the text within the list items */
+}
+  
+.grid-item ul li {
+    text-align: center; /* Centers the text within the list items */
+}
+
+.grid-item h3 {
+    text-align: center; /* Centers the text within the heading */
+}
+
+  
+
 .pagetop-container {
     display: block;
     background: url("../images/bwsbp3wclapboard2.jpg") center center no-repeat;
@@ -435,13 +472,20 @@ img {
     width: 100%;
     height: auto;
   }
+
+/* Styles for desktop computers and laptops */
+@media only screen and (min-width: 1024px) {
+    /* Add your desktop/laptop styles here */
+  }
   
-  /* Styles for devices with a viewport width of 600px or less */
-  @media screen and (max-width: 600px) {
-    img {
-      width: 50%;
-      margin: 0 auto; /* Center the image */
-    }
+  /* Styles for tablets and smaller laptops */
+  @media only screen and (max-width: 1023px) {
+    /* Add your tablet styles here */
+  }
+  
+  /* Styles for mobile devices */
+  @media only screen and (max-width: 767px) {
+    /* Add your mobile styles here */
   }
 
 gmp-map {
